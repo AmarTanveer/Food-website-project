@@ -1,3 +1,16 @@
+@media only screen and (max-width: 1333px) {
+    .bgElement {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1233px) {
+    .bgElement {
+        width: 250px;
+    }
+}
+
+
 /*Big tablets 1200px*/
 
 @media only screen and (max-width: 1200px) {
@@ -8,16 +21,33 @@
         margin-bottom: 10%;
     }
 
+    .logo{
+        width: 270px;
+    }
+
+    nav {
+        width: 90%;
+    }
+
     .hero-text-box {
-        width: 100%;
+        width: 70%;
         padding: 0 2%;
       }
       .contact-form {
         width: 70%;
     }
+
+    .bgElement {
+        width: 0px;
+    }
 }
 
-
+@media only screen and (max-width: 1233px) {
+    .hero-text-box {
+        width: 60%;
+        padding: 0 2%;
+      }
+}
 /*small tablets to big tablets from 768 to 1023px*/
 @media only screen and (max-width: 1023px) {
     html{
@@ -26,19 +56,37 @@
         text-rendering: optimizeLegibility;
     }
 
+    
     .section-form{
         margin-bottom: 0%;
     }
 
- 
+    .logo{
+        width: 200px;
+    }
 
-  .hero-text-box {
-    width: 100%;
+    nav {
+        width: 90%;
+    }
+
+    
+    .contact-form {
+      width: 70%;
+}
+
+.hero-text-box {
+    width: 70%;
     padding: 0 2%;
   }
-  .contact-form {
-    width: 70%;
+
+
 }
+
+@media only screen and (max-width: 863px) {
+    .hero-text-box {
+        width: 60%;
+        padding: 0 2%;
+      }
 }
 
 
@@ -72,6 +120,18 @@
     .contact-form {
         width: 70%;
     }
+
+    .logo{
+        width: 120px;
+    }
+
+    nav {
+        width: 90%;
+    }
+    .hero-text-box {
+        width: 50%;
+        padding: 0 2%;
+      }
 }
 
 
@@ -84,5 +144,23 @@
         font-weight: 80%;
         font-size: 80%;
         text-rendering: optimizeLegibility;
+    }
+    @media only screen and (max-width: 1233px) {
+    .hero-text-box {
+        width: 60%;
+        padding: 0 2%;
+      }
+}
+
+.hero-text-box {
+    font-size: 70%;
+  }
+
+    .logo{
+        width: 100px;
+    }
+
+    nav {
+        width: 50%;
     }
 }
