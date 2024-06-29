@@ -15,7 +15,8 @@ html{
 }
 
 header{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('image/hero.jpg');
+    
+    background-color: #6b148b;
     background-attachment: fixed;
     height: 100vh;
     background-position: center;
@@ -51,10 +52,34 @@ h2, h3 {
 
 .hero-text-box{
     position: absolute;
-    width: 1140px;
+    width: 1140/2px;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%,-50%);
+}
+
+.girl-box{
+    transform: translate(-31%, 270%) rotate(70deg);
+}
+
+.girl-box img {
+    width: 200px;
+}
+
+.logo{
+    float: left;
+    width: 350px;
+    height:auto;
+ 
+}
+
+
+.logo-box {
+    position: absolute;
+    width: 1140/2px;
+    top: 20%;
+    left: 65%;
+    transform: translate(10%,20%);
 }
 
 .btn{
@@ -67,33 +92,27 @@ h2, h3 {
 }
 
 .btn-full{
-    background-color: chocolate;
+    background-color: #8A1EB0;
     color: whitesmoke;
     margin-right: 10px;
 }
 
 .btn-ghost{
-    color: chocolate;
-    border: 1px solid chocolate;
+    color: #8A1EB0;
+    border: 1px solid #8A1EB0;
 }
 
 .btn-full:hover {
-    background-color: rgb(195, 97, 27);
+    background-color: #FFEF60;
+    color: #6b148b;
 }
 
 .btn-ghost:hover
 {
     color: whitesmoke;
-    background-color: chocolate;
+    background-color: #8A1EB0;
 }
 
-.logo{
-    float: left;
-    width: 100px;
-    height:auto;
-    margin-left: 30px;
-    margin-top: 20px;
-}
 
 .nav-items{
     
@@ -117,8 +136,9 @@ h2, h3 {
 }
 
 .nav-items li a:hover{
-    border-bottom: 1px solid chocolate;
+    border-bottom: 5px solid #8A1EB0;
 }
+
 
 
 section{
@@ -128,6 +148,13 @@ section{
 	margin-right: 40px;
     height: 100vh;
 }
+
+.section-app-prototype {
+    margin-left: 0px;
+	margin-right: 0px;
+    height: 120vh;
+}
+
 .section-meals{
     margin: 0px;
     height: 80vh;
@@ -140,10 +167,15 @@ section{
     margin-bottom: 2%;
 }
 
+.bgElement {
+    overflow: hidden;
+    width: 400px;
+    transform: translate(-50px, -80px)
+}
 
 h2::after{
     display: block;
-    background-color: chocolate;
+    background-color: #8A1EB0;
     height: 2px;
     width: 100px;
     margin: auto;
@@ -160,7 +192,7 @@ h2::after{
     margin: auto;
     margin-bottom: 20px;
     display: block;
-    color: chocolate;
+    color: #8A1EB0;
 }
 
 .box{
@@ -218,10 +250,8 @@ h2::after{
    height: 100vh;
 }
 .app-screen {
-    background-color: rgb(199, 199, 199);
-    width: 40%;
-    box-shadow: 0 4px 18px 0 rgba(255, 136, 0, 0.15), 0 16px 20px 0 rgba(255, 120, 9, 0.15);
-    border-radius: 45px;
+   width: 100%;
+   margin-left: -50px;
 }
 
 
@@ -232,16 +262,16 @@ h2::after{
 
 .steps-box:first-child{
     text-align: center;
-    margin-top: 30px;
+  
     
 }
 .steps-box:last-child{
-    margin-top: 130px;
+    margin-top: 120px;
 }
 .works-step div{
-    color: chocolate;
+    color: #8A1EB0;
     font-size: large;
-    border: 2px solid chocolate;
+    border: 2px solid #8A1EB0;
     border-radius: 50%;
     height: 70px;
     width: 70px;
@@ -253,7 +283,7 @@ h2::after{
 
 .works-step div:hover {
     color: whitesmoke;
-    background-color: chocolate;
+    background-color: #8A1EB0;
 }
 
 .works-step p{
@@ -268,7 +298,6 @@ h2::after{
     height: 50px;
     width: auto;
     margin-right: 20px;
-    box-shadow: 0 8px 8px 0 rgba(255, 136, 0, 0.1), 0 20px 20px 0 rgba(255, 120, 9, 0.1);
 }
 
 .box img{
@@ -281,7 +310,7 @@ h2::after{
     display: inline-block;
     width: 30px;
     text-align: center;
-    color: chocolate;
+    color: #8A1EB0;
     vertical-align: middle;
     margin-top: 0px;
     padding-top: 5px;
@@ -362,7 +391,7 @@ h2::after{
 }
 .plan-box p:first-of-type{
     font-size: 150%;
-    color: chocolate;
+    color: #8A1EB0;
     margin-bottom: 5%;
 }
 .plan-box p:last-of-type{
@@ -396,8 +425,8 @@ textarea {
 }
 
 input[type=submit]{
-    color: chocolate;
-    border: 1px solid chocolate;
+    color: #8A1EB0;
+    border: 1px solid #8A1EB0;
     background-color: white;
     text-decoration: none;
     padding: 20px 30px;
@@ -405,7 +434,7 @@ input[type=submit]{
     transition: background-color 0.2s, color 0.2s, border 0.2s;
 }
 input[type=submit]:hover{
-    background-color: chocolate;
+    background-color: #8A1EB0;
     color: whitesmoke;
     
 }
@@ -437,7 +466,7 @@ footer {
 
 .footer-nav li a:hover, .social-link li a:hover {
     text-decoration: none;
-    color: chocolate;
+    color: #8A1EB0;
 }
 
 footer p{
@@ -450,6 +479,6 @@ footer p{
     font-size: 150%;
 }
 .social-icons:hover {
-    color: chocolate;
+    color: #8A1EB0;
 }
 
